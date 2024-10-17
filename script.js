@@ -19,11 +19,20 @@ function addProduct(event) {
     
 
     const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remover';
+    removeButton.textContent = 'Excluir';
     removeButton.onclick = () => {
         productList.removeChild(li);
     };
 
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Editar';
+    editButton.onclick = () => {
+        productNameInput.value = productName;
+        productQuantityInput.value = productQuantity;
+        productList.removeChild(li);
+    };
+
+    li.appendChild(editButton);
     li.appendChild(removeButton);
     productList.appendChild(li);
 
