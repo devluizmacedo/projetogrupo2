@@ -1,3 +1,9 @@
+body{
+    background-color: gray;
+    padding: 200px;
+    margin: 10px ;
+}
+
 .container {
     max-width: 600px;
     margin: auto;
